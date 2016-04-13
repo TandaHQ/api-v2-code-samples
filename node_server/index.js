@@ -16,8 +16,8 @@ var homePage = "http://localhost:" + port
 var redirectUri = homePage + "/callback"
 var site = "https://my.tanda.co/api"
 var scopes = [
-  "public",
-  "roster_read"
+  "me",
+  "roster"
 ]
 
 // Usually token information would be stored in a database against a user
