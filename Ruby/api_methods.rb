@@ -37,3 +37,12 @@ def update(extension, body, token)
   HTTParty.put(base_url + extension, :headers => headers, :query => body)
 
 end
+
+def destroy(extension, token)
+  base_url = "https://my.tanda.co/api/v2/"
+  auth = "Bearer " + token
+  headers = {"Content-Type"=> "application/json", "Authorization"=> auth}
+
+  HTTParty.delete(base_url + extension, :headers => headers)
+
+end
