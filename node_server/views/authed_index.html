@@ -3,6 +3,10 @@
 <body>
   <h1>You're Authenticated!</h1>
   <h3>Hello <%- user_info.name %></h3>
+  <% if (user_info.photo) { %>
+    <img src="<%- user_info.photo %>">
+    <br>
+  <% } %>
   <a href="/roster">Click here to see your current roster</a>
 </body>
 </html>
