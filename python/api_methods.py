@@ -10,5 +10,31 @@ def authenticate(username, password, scope = 'me'):
   token = eval(data.content).get('access_token')
   return token
 
+def get(extension, token):
+  base_url = 'https://my.tanda.co/api/v2/'
+  auth = 'Bearer ' + token
+  headers = {'Cache-Control': 'no-cache', 'Authorization': auth}
+  data = requests.get(base_url + extension, headers=headers)
+  return data
+
+def post(extension, params, token):
+  base_url = 'https://my.tanda.co/api/v2/'
+  auth = 'Bearer ' + token
+  headers = {'Content-Type': 'application/json', 'Authorization': auth}
+  requests.post(base_url + extension, params=params, headers=headers)
+
+def put(extension, params, token):
+  base_url = 'https://my.tanda.co/api/v2/'
+  auth = 'Bearer ' + token
+  headers = {'Content-Type': 'application/json', 'Authorization': auth}
+  requests.put(base_url + extension, params=params, headers=headers)
+
+def delete(extension, token):
+  base_url = 'https://my.tanda.co/api/v2/'
+  auth = 'Bearer ' + token
+  headers = {'Content-Type': 'application/json', 'Authorization': auth}
+  requests.delete(base_url + extension, headers=headers)
+
+
 token = authenticate(USERNAME, PASSWORD)
 print token
