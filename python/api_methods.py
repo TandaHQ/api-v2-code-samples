@@ -6,7 +6,7 @@ http://docs.python-requests.org/en/master/
 import requests
 import json
 
-# Creates new token based on Tandau sername, password and scope
+# Creates new token based on Tanda username, password and scope
 # You can view your tokens here https://my.tanda.co/api/oauth/access_tokens
 # View available scopes https://my.tanda.co/api/v2/documentation#header-scopes
 def authenticate(username, password, scope = 'me'):
@@ -43,12 +43,12 @@ def delete(extension, token):
   requests.delete(base_url + extension, headers=headers)
 
 
-#Get a Token which you will use to authenticate yourself
+#Get a token which you will use to authenticate yourself
 #Seperate scopes with spaces or leave blank for default scope
-token = authenticate(USERNAME,PASSWORD,"user me")
+token = authenticate(USERNAME, PASSWORD, "user me")
 
 #Use token to get information about your user.
-user = get("users/me",token)
+user = get("users/me", token)
 
 #Print the content of the request i.e. user details
 print user.content
