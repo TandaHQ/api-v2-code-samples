@@ -48,11 +48,11 @@ def delete(extension, token)
   HTTParty.delete(base_url + extension, :headers => headers)
 end
 
-#Get a Token which you will use to authenticate yourself
+#Get a token which you will use to authenticate yourself
 #Seperate scopes with spaces
-token = authenticate(USERNAME,PASSWORD,"user me")
+token = authenticate(USERNAME, PASSWORD, "user me")
 
 #Use token to get information about your user.
-user = get("users/me",token)
+user = get("users/me", token)
 
 puts user
