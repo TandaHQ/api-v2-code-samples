@@ -20,10 +20,10 @@ var scopes = [
   "roster"
 ]
 
-// Usually token information would be stored in a database against a user
+// Usually token information would be stored in a database for a user
 var token
 
-// Setting variables onces is a lazy man's cache
+// Setting variables once is a lazy man's cache
 var userInfo
 var rosterInfo
 
