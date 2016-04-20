@@ -1,8 +1,8 @@
-#Tanda API Methods with HTTParty
+# Tanda API Methods with HTTParty
 # You will need to install HTTParty. `gem install httparty`
 require 'httparty'
 
-# Creates new token based on Tandau sername, password and scope
+# Creates new token based on Tanda username, password and scope
 # You can view your tokens here https://my.tanda.co/api/oauth/access_tokens
 # View available scopes https://my.tanda.co/api/v2/documentation#header-scopes
 def authenticate(username, password, scope)
