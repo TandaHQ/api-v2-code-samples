@@ -4,6 +4,7 @@ pip install requests
 http://docs.python-requests.org/en/master/
 '''
 import requests
+import json
 
 # Creates new token based on Tandau sername, password and scope
 # You can view your tokens here https://my.tanda.co/api/oauth/access_tokens
@@ -13,7 +14,7 @@ def authenticate(username, password, scope = 'me'):
   body = {'username': username, 'password': password, 'scope': scope, 'grant_type': 'password'}
   headers = {'Cache-Control': 'no-cache'}
   data  = requests.post(url, params=body, headers=headers)
-  token = eval(data.content).get('access_token')
+  token = str(json.loads(data.content).get('access_token'))
   return token
 
 def get(extension, token):
