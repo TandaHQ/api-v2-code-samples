@@ -6,7 +6,8 @@ Please see the API documentation [here](https://my.tanda.co/api/v2/documentation
 
 ## Other repos
 
-+ [meteor-tanda](https://github.com/justindra/meteor-tanda) and/or [meteor-accounts-tanda](https://github.com/justindra/meteor-accounts-tanda) (Meteor.js)
++ [meteor-tanda](https://github.com/justindra/meteor-tanda) and/or [meteor-accounts-tanda](https://github.com/justindra/meteor-accounts-tanda) (Meteor.js) by @justindra
++ [PHP auth example](https://github.com/zbrba/tanda_api_php) by @zbrba
 
 ## Useful OAuth 2 Packages
 
