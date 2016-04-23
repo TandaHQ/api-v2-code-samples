@@ -9,6 +9,7 @@ Please see the API documentation [here](https://my.tanda.co/api/v2/documentation
 + [meteor-tanda](https://github.com/justindra/meteor-tanda) and/or [meteor-accounts-tanda](https://github.com/justindra/meteor-accounts-tanda) (Meteor.js) by @justindra
 + [PHP auth example](https://github.com/zbrba/tanda_api_php) by @zbrba
 + [Tandapy](https://github.com/Baralabite/Tandapy) by @Baralabite
++ [node-tanda](https://github.com/deecewan/node-tanda) by @deecewan
 
 ## Useful OAuth 2 Packages
 
