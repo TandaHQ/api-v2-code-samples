@@ -9,7 +9,7 @@ To test the API, we highly recommend [Postman](https://www.getpostman.com/), a t
 A few terms you'll see in this guide, that you might have seen before:
 
 - *Request* - in [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods), a message sent from one system to another (in this case, from your code, to the API)
-- *Resopnse* - what a web server sends back when you send it a request
+- *Response* - what a web server sends back when you send it a request
 - *Endpoint* - a particular URL that the API responds to
 - *GET*, *POST*, *PUT*, *DELETE* - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods) methods. GET means "give me data". POST means "insert this data". PUT means "update with this data". DELETE means "get rid of data".
 
@@ -49,7 +49,7 @@ The response will be [JSON](https://en.wikipedia.org/wiki/JSON) formatted, which
 
 **3. Posting (creating) data**
 
-Let's try adding in a new employee. To do this, we want the "[Create User](https://my.tanda.co/api/v2/documentation#users-user-list-post)" endpoint in the API documentation. This endpoint says we should make a `POST` to `/api/v2/users`. Let's do that in Postman. According to the API documentation, only the `name` field is required - but we're going to enter a few other fields too, just to play with different data types.
+Let's try adding a new employee into Tanda. To do this, we want the "[Create User](https://my.tanda.co/api/v2/documentation#users-user-list-post)" endpoint in the API documentation. This endpoint says we should make a `POST` to `/api/v2/users`. Let's do that in Postman. According to the API documentation, only the `name` field is required - but we're going to enter a few other fields too, just to play with different data types.
 
 ![postman - making a post](post.png)
 
