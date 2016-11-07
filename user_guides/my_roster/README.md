@@ -10,7 +10,7 @@ Finally, make a call to [`/api/v2/schedules`](https://my.tanda.co/api/v2/documen
 https://my.tanda.co/api/v2/schedules?from=2016-11-08&to=2016-11-22&user_ids=123456
 ```
 
-If you want to also include the names of the team being worked in for each schedule, include the `include_names` parameter in the URL.
+If you want to also include the names of the team and location being worked in for each schedule, include the `include_names` parameter in the URL.
 
 ```
 https://my.tanda.co/api/v2/schedules?from=2016-11-08&to=2016-11-22&user_ids=123456&include_names=true
