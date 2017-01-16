@@ -15,3 +15,11 @@ If you want to also include the names of the team and location being worked in f
 ```
 https://my.tanda.co/api/v2/schedules?from=2016-11-08&to=2016-11-22&user_ids=1,2,123456&include_names=true
 ```
+
+If you are getting a list of schedules with the intent of immediately displaying them to their corresponding employee, you can also include the `publish` parameter like so.
+
+```
+https://my.tanda.co/api/v2/schedules?from=2016-11-08&to=2016-11-22&user_ids=1,2,123456&publish=true
+```
+
+This marks the schedules as published in Tanda, which is the equivalent of emailing/SMSing the to the employee.
