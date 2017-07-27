@@ -10,6 +10,7 @@ Please see the API documentation [here](https://my.tanda.co/api/v2/documentation
 + [PHP auth example](https://github.com/zbrba/tanda_api_php) by @zbrba
 + [Tandapy](https://github.com/Baralabite/Tandapy) by @Baralabite
 + [node-tanda](https://github.com/deecewan/node-tanda) by @deecewan
++ [tandarb](https://github.com/iamarmanjon/tandarb) by @iamarmanjon
 
 ## Useful OAuth 2 Packages
 
