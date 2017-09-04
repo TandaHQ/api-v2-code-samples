@@ -20,9 +20,9 @@ Use the URL that you got from Zapier in step 1. You won't need a security token.
 
 Click save when you're done.
 
-## 3. Clock in
+## 3. Do the action
 
-Tanda will now send data to Zapier whenever someone clocks in. So you need to make some data get from Tanda to Zapier - do that by going to your time clock and clocking in!
+In this example, Tanda will now send data to Zapier whenever someone clocks in. Based on what event you chose in step 2, you might have a different event. Either way, it's important that you **make this event happen once before you continue setting Zapier up**. In this example, you do that by going to your time clock and clocking in!
 
 If you don't have a time clock handy, you can go to https://timeclock.tanda.co and set one up just for testing. You can get your access code from https://my.tanda.co/timeclocks/new if you need it.
 
