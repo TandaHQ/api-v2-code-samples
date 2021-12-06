@@ -18,7 +18,7 @@ Use the Callback URL from above to create your application
 Get the Application ID and Application Secret, and add them to the Salesforce Auth Provider you created
     ![Tanda Oauth Application](assets/TandaOauthApplicationExample.png)
 
-### 3. Setup Named Credentials using your new Auth Provider.(Setup > Security > Named Credentials)**
+### 3. Setup Named Credentials using your new Auth Provider.(Setup > Security > Named Credentials)
 
 The connection should be established when you save the Named Credentials
     ![Example of Named Credentials](assets/SalesforceNamedCredentialsExample.png)
