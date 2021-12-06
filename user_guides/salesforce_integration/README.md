@@ -12,7 +12,7 @@ Enter in dummy data in the key and secret fields so you can create the provider 
     ![Example of SalesforceAuthProvider](assets/SalesforceAuthProviderExample.png)
     ![Example of CallbackUrl](assets/SalesforceCallbackExample.png)
 
-### 2. Setup the Oauth Application in Workforce at the [My Workforce Applications](https://my.workforce.com/api/oauth/applications) page**
+### 2. Setup the Oauth Application in Workforce at the [My Workforce Applications](https://my.workforce.com/api/oauth/applications) page
 
 Use the Callback URL from above to create your application
 Get the Application ID and Application Secret, and add them to the Salesforce Auth Provider you created
