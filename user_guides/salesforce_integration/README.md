@@ -6,7 +6,7 @@
 
 This section will help you create an Oauth connection between Salesforce and Workforce, allowing you to send and receive callbacks from [Tanda API](https://my.tanda.co/api/v2/documentation)
 
-### 1. Setup the Auth Provider in Salesforce (Setup > Identity > Auth Provider)**
+### 1. Setup the Auth Provider in Salesforce (Setup > Identity > Auth Provider)
 
 Enter in dummy data in the key and secret fields so you can create the provider (you will get these after you setup the Workforce Oauth application)
     ![Example of SalesforceAuthProvider](assets/SalesforceAuthProviderExample.png)
