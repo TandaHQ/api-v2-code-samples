@@ -2,6 +2,19 @@
 
 ---
 
+## Background
+
+The purpose of this document was to be a guide for general use. For context though it is based off a project where:
+
+- Customer contracts are recorded across several custom objects in Salesforce
+- These contracts are the source for customer locations and the type and level of staffing at each customer location.
+- There were three main goals of the integration:
+  - Automatically create a location in Workforce.com when a new customer is signed.
+  - Automatically create a team in Workforce.com for each type of worker required by the contract.
+  - Send and regularly update the staffing requirements of each contract to Workforce.com so that managers and automated scheduling can create shifts and assign workers sufficiently
+
+---
+
 ## Creating the connection
 
 This section will help you create an Oauth connection between Salesforce and Workforce, allowing you to send and receive callbacks from [Tanda API](https://my.tanda.co/api/v2/documentation)
