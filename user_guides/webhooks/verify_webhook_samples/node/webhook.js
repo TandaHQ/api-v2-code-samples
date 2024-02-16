@@ -15,12 +15,12 @@ const app = express();
 const port = 3000;
 const securityToken = 'tandawebhooktest';
 
-app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 app.post('/', (req, res) => {
-  const payload = req.body.payload;
-  const signature = req.headers['x-hook-signature'];
-  const actualSignature = crypto.createHmac('sha1', securityToken).update(JSON.stringify(payload)).digest('hex');
+  const payload = req.body;
+  const signature = req.headers['x-webhook-signature'];
+  const actualSignature = crypto.createHmac('sha1', securityToken).update(payload).digest('hex');
 
   ap(`Signature: ${signature}`);
   ap(`Actual Signature: ${actualSignature}`);
