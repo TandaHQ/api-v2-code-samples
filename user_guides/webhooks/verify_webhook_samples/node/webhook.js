@@ -15,7 +15,7 @@ const app = express();
 const port = 3000;
 const securityToken = 'tandawebhooktest';
 
-app.use(bodyParser.text());
+app.use(bodyParser.text({ type: 'application/json' }));
 
 app.post('/', (req, res) => {
   const payload = req.body;
